@@ -1,0 +1,6 @@
+E:\Projects\Ideal Homes\IdealResidencia\IdealResidencia\bin\IdealResidencia.dll.config
+E:\Projects\Ideal Homes\IdealResidencia\IdealResidencia\bin\IdealResidencia.dll
+E:\Projects\Ideal Homes\IdealResidencia\IdealResidencia\bin\IdealResidencia.pdb
+E:\Projects\Ideal Homes\IdealResidencia\IdealResidencia\obj\Debug\IdealResidencia.csprojResolveAssemblyReference.cache
+E:\Projects\Ideal Homes\IdealResidencia\IdealResidencia\obj\Debug\IdealResidencia.dll
+E:\Projects\Ideal Homes\IdealResidencia\IdealResidencia\obj\Debug\IdealResidencia.pdb
