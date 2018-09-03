@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminPanel/Admin.Master" AutoEventWireup="true" CodeBehind="NewFile.aspx.cs" Inherits="IdealResidencia.AdminPanel.NewFile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/src/Admin.Master" AutoEventWireup="true" CodeBehind="NewFile.aspx.cs" Inherits="IdealResidencia.AdminPanel.NewFile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container" style="padding: 20px; margin-left: 15px">

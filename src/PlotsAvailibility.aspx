@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminPanel/Admin.Master" AutoEventWireup="true" CodeBehind="PlotsAvailibility.aspx.cs" Inherits="IdealResidencia.AdminPanel.PlotsAvailibility" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/src/Admin.Master" AutoEventWireup="true" CodeBehind="PlotsAvailibility.aspx.cs" Inherits="IdealResidencia.AdminPanel.PlotsAvailibility" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   <link href="js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>

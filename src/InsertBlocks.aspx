@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminPanel/Admin.Master" AutoEventWireup="true" CodeBehind="AddPlots.aspx.cs" Inherits="IdealResidencia.AdminPanel.AddPlots" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/src/Admin.Master" AutoEventWireup="true" CodeBehind="InsertBlocks.aspx.cs" Inherits="IdealResidencia.AdminPanel.InsertBlocks" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
@@ -11,48 +11,42 @@
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                 <div class="card-panel" style="box-shadow: 0 2px 5px 0 #00bcd4 , 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important">
-                                    <h4 class="header2"><b>Add Plots</b></h4>
+                                    <h4 class="header2"><b>Insert Blocks</b></h4>
                                     <div class="row">
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <asp:DropDownList ID="TextBox1" runat="server">
-                                                    <asp:ListItem>--Select Blocks--</asp:ListItem>
-                                                    <asp:ListItem>A</asp:ListItem>
-                                                    <asp:ListItem>B</asp:ListItem>
-                                                    <asp:ListItem>C</asp:ListItem>
-                                                    <asp:ListItem>D</asp:ListItem>
-                                                    <asp:ListItem>H</asp:ListItem>
-                                                </asp:DropDownList>
+                                                <asp:TextBox ID="BlockNameTextBox" runat="server" CssClass="form-control"></asp:TextBox>
+                                                <label>Block Name</label>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <asp:TextBox ID="SizeMarlaTextBox" runat="server" CssClass="form-control"></asp:TextBox>
-                                                <label>Plot Size Marla</label>
+                                                <asp:TextBox ID="MarketName" runat="server" CssClass="form-control"></asp:TextBox>
+                                                <label>Market Name</label>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <asp:TextBox ID="SizeSquareInchTextBox" runat="server" CssClass="form-control"></asp:TextBox>
-                                                <label>Plot Size Square Inch</label>
+                                                <asp:TextBox ID="ParkNameTextBox" runat="server" CssClass="form-control"></asp:TextBox>
+                                                <label>Park Name</label>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <asp:TextBox ID="StreetNo1TextBox" runat="server" CssClass="form-control"></asp:TextBox>
-                                                <label>Plot Street No 1</label>
+                                                <asp:TextBox ID="HospitalNameTextBox" runat="server" CssClass="form-control"></asp:TextBox>
+                                                <label>Hospital Name</label>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <asp:TextBox ID="StreetNo2TextBox" runat="server" CssClass="form-control"></asp:TextBox>
-                                                 <label>Plot Street No 2</label>
+                                                <asp:TextBox ID="SchoolNameTextBox" runat="server" CssClass="form-control"></asp:TextBox>
+                                                <label>School Name</label>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <asp:TextBox ID="StreetNo3TextBox" runat="server" CssClass="form-control"></asp:TextBox>
-                                                 <label>Plot Street No 3</label>
+                                                <asp:TextBox ID="MasjidNameTextBox" runat="server" CssClass="form-control"></asp:TextBox>
+                                                <label>Masjid Name</label>
                                             </div>
                                         </div>
                                         <div class="row">
