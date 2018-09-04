@@ -1,11 +1,11 @@
 ﻿/* ------------------------------------------------------------------ */
-/* The 'DAS.Helper.AllConstStrs' in C#                                */
+/* The 'IdealR.Helper.AllConstStrs' in C#                                */
 /* ------------------------------------------------------------------ */
-/* Copyright (c) Design A Shirt, 2010.  All rights reserved.          */
+/* Copyright (c) Ideal Residencia, 2018.  All rights reserved.        */
 /* ------------------------------------------------------------------ */
 /* Version:     1.0.0.0                                               */
-/* Author:      Vidhya SampathKumaran , Nabil Asadi                   */                              
-/* Date:        Oct, 2010                                             */
+/* Author:      Ammar Baig                                            */                              
+/* Date:        Sept, 2018                                             */
 /* ------------------------------------------------------------------ */
 
 using System;
@@ -15,11 +15,11 @@ using System.Web;
 using System.Text;
 using System.Configuration;
 
-namespace DAS.Helper
+namespace IdealR.Helper
 {
     public static class AllConstStrs
     {
-        public const string con_ConnectionStrName = "DASConStr";
+        public const string con_ConnectionStrName = "IdealRConStr";
         
         #region Email Templates Query string / Session Variables
         public const string em_title = "title";//title for all email pages

@@ -6,9 +6,8 @@ using System.Configuration;
 using System.Collections;
 using System.Text;
 using System.Collections.Generic;
-using DAS.Utility;
 
-namespace DAS.Helper
+namespace IdealR.Helper
 {
     public class DBUtility
     {
@@ -74,7 +73,7 @@ namespace DAS.Helper
             str.AppendLine("Exception Source: " + exc.Source);
             //str.AppendLine("Exception Stack Trace: " + exc.StackTrace);
             //ErrLogger.Log(str.ToString());
-            WebUtility.ElmahLog(ref exc, str.ToString());
+            //WebUtility.ElmahLog(ref exc, str.ToString());
 
         }
 
@@ -235,7 +234,7 @@ namespace DAS.Helper
                         str.AppendLine(sqls[i]);
                     }
                 }
-                WebUtility.ElmahLog(ref exc, str.ToString());
+                //WebUtility.ElmahLog(ref exc, str.ToString());
             }
             finally
             {
