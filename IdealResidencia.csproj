@@ -40,7 +40,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -59,6 +67,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="IdealRModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IdealRModel.Context.cs</LastGenOutput>
+      <DependentUpon>IdealRModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="IdealRModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IdealRModel.edmx</DependentUpon>
+      <LastGenOutput>IdealRModel.cs</LastGenOutput>
+    </Content>
     <Content Include="src\AddPlots.aspx" />
     <Content Include="src\bootstrap\css\bootstrap-theme.css.map" />
     <Content Include="src\bootstrap\css\bootstrap.css.map" />
@@ -81,6 +99,15 @@
     <Content Include="src\font\roboto\Roboto-Thin.ttf" />
     <Content Include="src\font\roboto\Roboto-Thin.woff" />
     <Content Include="src\Admin.Master" />
+    <EntityDeploy Include="IdealRModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>IdealRModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="IdealRModel.edmx.diagram">
+      <DependentUpon>IdealRModel.edmx</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="src\Configs\ConnectionStrings.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -167,6 +194,50 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Helper\AllConstStrs.cs" />
+    <Content Include="App_Code\Model\DBUtility.cs" />
+    <Compile Include="Block.cs">
+      <DependentUpon>IdealRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CashMode.cs">
+      <DependentUpon>IdealRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommissionAgent.cs">
+      <DependentUpon>IdealRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>IdealRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IdealRModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IdealRModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IdealRModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IdealRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IdealRModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IdealRModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="InstallmentMode.cs">
+      <DependentUpon>IdealRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Investor.cs">
+      <DependentUpon>IdealRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <DependentUpon>IdealRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Plot.cs">
+      <DependentUpon>IdealRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlotBooking.cs">
+      <DependentUpon>IdealRModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="src\AddPlots.aspx.cs">
       <DependentUpon>AddPlots.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -217,6 +288,9 @@
       <DependentUpon>PlotsAvailibility.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
