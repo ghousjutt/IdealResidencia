@@ -7,7 +7,6 @@ namespace IdealResidencia
 {
 
 
-    // BP KI KAHANI KHATAMMMMMMMMMMMMMMMMMMMMMMMMmm
     // all base pages inherit from a root base page instead of system page
     public class BP : System.Web.UI.Page 
     {
