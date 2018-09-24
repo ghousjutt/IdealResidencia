@@ -76,6 +76,12 @@
         </header>
         <!-- END HEADER -->
 
+        <!-- Start WebPage FOrms-->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
         <!-- //////////////////////////////////////////////////////////////////////////// -->
         <div id="main">
             <div class="wrapper">
