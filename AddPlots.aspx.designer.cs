@@ -13,13 +13,13 @@ namespace IdealResidencia {
     public partial class AddPlots {
         
         /// <summary>
-        /// TextBox1 control.
+        /// ddlBlocks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList TextBox1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlBlocks;
         
         /// <summary>
         /// SizeMarlaTextBox control.
@@ -31,13 +31,40 @@ namespace IdealResidencia {
         protected global::System.Web.UI.WebControls.TextBox SizeMarlaTextBox;
         
         /// <summary>
-        /// SizeSquareInchTextBox control.
+        /// AreaTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox SizeSquareInchTextBox;
+        protected global::System.Web.UI.WebControls.TextBox AreaTextBox;
+        
+        /// <summary>
+        /// StatusTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox StatusTextBox;
+        
+        /// <summary>
+        /// TypeTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TypeTextBox;
+        
+        /// <summary>
+        /// CategoryTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CategoryTextBox;
         
         /// <summary>
         /// StreetNo1TextBox control.
@@ -74,5 +101,14 @@ namespace IdealResidencia {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton SubmitBtn;
+        
+        /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }
